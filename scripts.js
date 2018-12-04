@@ -16,7 +16,6 @@ $("#gif").hover(function() {
     $(this).data("img", src);
 });
 
-
 // fullpage customization
 $('#fullpage').fullpage({
     // sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
@@ -57,3 +56,10 @@ $('#fullpage').fullpage({
         }
     }
 });
+
+function modalOpen(number) {
+    $(".video-modal" + number).show();
+}
+function modalClose(number) {
+    $(".video-modal" + number).hide();
+};
