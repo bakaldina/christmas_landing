@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Christmas</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -13,62 +12,83 @@
 
 <header>
     <div class="header-top">
-        <a href="city-mobil.ru"><img class="logo" src="img/logo.svg" alt=""></a>
-        <a class="l-right toggle-menu" href="#">
-            <i></i>
-            <i></i>
-            <i></i>
-        </a>
+        <div class="wrapper">
+            <div class="logo header__logo">
+                <a href="https://city-mobil.ru">
+                    <img src="img/logo.svg" alt="Ситимобил">
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://vk.com/citymobiltaxi">
+                    <img src="img/vk.svg" alt="VK">
+                </a>
+                <a href="https://www.facebook.com/citymobiltaxi/">
+                    <img src="img/fb.svg" alt="FB">
+                </a>
+                <a href="https://ok.ru/taksisitim">
+                    <img src="img/ok.svg" alt="OK">
+                </a>
+                <a href="https://www.instagram.com/citymobiltaxi/">
+                    <img src="img/inst.svg" alt="IG">
+                </a>
+            </div>
+        </div>
     </div>
-
-
 </header>
+<main>
+    <div id="fullpage">
+        <section class="vertical-scrolling block block-1">
+            <div class="wrapper">
+                <div class="block-1-item">
+                    <div class="block-1-item__title">Таксипортируйтесь</div>
+                    <div class="block-1-item__text">и отмечайте Новый год <br/>
+                        раз за разом</div>
+                    <a href="#"> <button class="button">от <span>89</span> рублей</button></a>
 
-<div id="fullpage">
-    <section class="vertical-scrolling block block-1">
-        <div class="scroll-icon">
-            <p>Таксипортироваться</p>
-            <a href="#secondSection" class="icon-up-open-big"></a>
-        </div>
-    </section>
-    <section class="vertical-scrolling block block-2">
-        <div class="scroll-icon">
-            <p>Следующая история</p>
-            <a href="#thirdSection" class="icon-up-open-big"></a>
-        </div>
-    </section>
-    <section class="vertical-scrolling block block-3">
-        <div class="scroll-icon">
-            <p>Следующая история</p>
-            <a href="#fourthSection" class="icon-up-open-big"></a>
-        </div>
-    </section>
-    <section class="vertical-scrolling block block-4">
-        <div class="scroll-icon">
-            <p>Что их объединят</p>
-            <a href="#fifthSection" class="icon-up-open-big"></a>
-        </div>
-    </section>
-    <section class="vertical-scrolling block block-5">
+                </div>
+                <div class="scroll-icon">
+                    <p>Таксипортироваться</p>
+                    <a href="#secondSection" class="icon-up-open-big"></a>
+                </div>
+            </div>
+        </section>
+        <section class="vertical-scrolling block block-2">
+            <div class="wrapper">
+                <div class="block-2-item">
+                    <div class="block-item-left block-item-wrapper">
+                        <img id="gif" src="img/pin1.png" data-img="img/pin1.gif"/>
+                    </div>
+                    <div class="block-item-right block-item-wrapper">
+                        <div class="block-title">Имя парня</div>
+                        <div class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-icon">
+                <p>Следующая история</p>
+                <a href="#thirdSection" class="icon-up-open-big"></a>
+            </div>
+        </section>
+        <section class="vertical-scrolling block block-3">
+            <div class="scroll-icon">
+                <p>Следующая история</p>
+                <a href="#fourthSection" class="icon-up-open-big"></a>
+            </div>
+        </section>
+        <section class="vertical-scrolling block block-4">
+            <div class="scroll-icon">
+                <p>Что их объединят</p>
+                <a href="#fifthSection" class="icon-up-open-big"></a>
+            </div>
+        </section>
+        <section class="vertical-scrolling block block-5">
 
-    </section>
-</div>
+        </section>
+    </div>
+</main>
 
-    <!--<header></header>-->
-    <!--<main>-->
-        <!--<div class="parallax-wrapper">-->
-            <!--<section class="block block-1"></section>-->
-            <!--<section class="block block-2"></section>-->
-            <!--<section class="block block-3"></section>-->
-            <!--<section class="block block-4"></section>-->
-        <!--</div>-->
-
-       <!---->
-    <!--</main>-->
-    <!--<footer></footer>-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
-    <script src="scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>

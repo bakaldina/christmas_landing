@@ -10,6 +10,11 @@ $header_top.find('a').on('click', function() {
     $(this).parent().toggleClass('open-menu');
 });
 
+$("#gif").hover(function() {
+    var src = this.src;
+    this.src = $(this).data("img");
+    $(this).data("img", src);
+});
 
 
 // fullpage customization
