@@ -123,7 +123,7 @@ section {
 }
 
 .block {
-    background-size: cover;
+    background-size: 120%;
     background-position: center 40%;
     background-repeat: no-repeat;
     height: 100vh;
@@ -157,6 +157,12 @@ section {
 }
 #gif {
     cursor: pointer;
+}
+.gif-back {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 550px;
 }
 .block-item-wrapper {
     display: inline-block;
@@ -204,13 +210,40 @@ section {
 
 .block-2 {
     background-image: url("img/block-2.png");
+    position: relative;
 }
 .block-2 #gif {
-    height: 400px;
+    height: 520px;
+    width: 600px;
+    position: absolute;
+    top: calc(50% - 270px);
+    left: calc(50% - 300px);
+
+}
+
+
+.block-2 .gif-back {
+    background-image: url("img/pin1.png");
+    height: 520px;
+    width: 600px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
+}
+
+.block-2 .gif-back:after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background-image: url("img/play.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% + 50px);
 }
 .block-2-item {
-    position: absolute;
-    top: 24%;
+
 }
     /*block-3*/
 
