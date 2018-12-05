@@ -44,7 +44,7 @@ ul, li {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 12;
+    z-index: 2;
 }
 
 .logo {
@@ -228,6 +228,9 @@ section {
 .block-2-back {
     height: 100%;
     position: relative;
+    /*background-image: url("img/block-2.png");*/
+    /*background-image: url("img/trace.png");*/
+    /*background-size: cover;*/
 }
 .trace {
     position: relative;
@@ -251,45 +254,38 @@ section {
     height: 520px;
     width: 600px;
     position: absolute;
-    top: calc(50% - 389px);
-    left: calc(50% - 550px);
-    z-index: 5;
-}
-.block-2 .gif-back:after {
-    content: '';
-    width: 80px;
-    height: 80px;
-    background-image: url("img/play.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% + 50px);
-    cursor: pointer;
+    top: calc(50% - 310px);
+    left: calc(50% - 670px);
+    z-index: 20;
 }
 .pin {
-    background-image: url("img/mini_pin.png");
+    background-image: url("img/mini-pin.png");
     background-size: contain;
     background-repeat: no-repeat;
+    width: 111px;
+    height: 132px;
     position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% + 50px);
     cursor: pointer;
     z-index: 4;
 }
 .pin:hover {
     content: '';
-    background-image: url("img/mini_pin-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% + 50px);
-    cursor: pointer;
-    z-index: 4;
+    background-image: url("img/mini-pin1.png");
+}
+.block-2 .pin-1 {
+    top: 65%;
+    left: 49%;
+}
+.block-2 .pin-2 {
+    top: 39%;
+    left: 61%;
+}
+.block-2 .pin-3 {
+    top: 32%;
+    right: 11%;
 }
 
-/*block-3*/
+    /*block-3*/
 
 .block-3 {
     background-image: url("img/block-3.png");
@@ -332,15 +328,6 @@ section {
     width: 50px;
 }
 
-/**MQ STYLES*/
-/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/*@media screen and (max-width: 1820px) {*/
-    /*.wrapper {*/
-        /*max-width: calc(100% - 300px);*/
-    /*}*/
-/*}*/
-
 .video-modal1,
 .video-modal2,
 .video-modal3 {
@@ -359,17 +346,12 @@ section {
     z-index: 9;
     position: relative;
     background-size: contain;
-    width: 1010px;
-    height: 600px;
-}
-.close {
-    position: absolute;
-    right: 0;
-    top: -33px;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    font-weight: 100;
+    width: 800px;
+    height: 440px;
+    background-color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
 }
 .video-modal1_overlay,
 .video-modal2_overlay,
@@ -383,8 +365,176 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
 }
-
+.video-modal .fp-slidesNav.bottom {
+    bottom: 400px
+}
+.video-modal  #fp-nav ul li a span, .video-modal .fp-slidesNav ul li a span {
+    background: black;
+}
 iframe {
     width: 1010px;
     height: 600px;
 }
+
+.trailer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+}
+.trailer-popup {
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+.trailer-popup iframe {
+    width: 100%;
+    height: 100%;
+}
+.trailer-popup-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.trailer-popup-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.trailer-popup-close:before, .trailer-popup-close:after {
+    content: ' ';
+    display: block;
+    width: 24px;
+    height: 4px;
+    background-color: white;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-45deg) translate(-8px, 18px);
+    -ms-transform: rotate(-45deg) translate(-8px, 18px);
+    transform: rotate(-45deg) translate(-8px, 18px);
+}
+.trailer-popup-close:after {
+    -webkit-transform: rotate(45deg) translate(15px, 5px);
+    -ms-transform: rotate(45deg) translate(15px, 5px);
+    transform: rotate(45deg) translate(15px, 5px);
+}
+.horizontal-scrolling {
+    color: #000;
+    text-align: center;
+}
+.block-2 .play {
+    width: 80px;
+    height: 80px;
+    background-image: url("img/play.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% + 50px);
+    cursor: pointer;
+    z-index: 3
+}
+.play:hover {
+    opacity: 0.5;
+}
+.close {
+    width: 30px;
+    height: 30px;
+    background-image: url("img/close.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+/*MQ STYLES*/
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (min-width: 1500px) {
+    .wrapper {
+        max-width: 1300px;
+    }
+    .social a img {
+        width: 40px;
+        height: 40px;
+    }
+    .logo img {
+        width: 300px;
+        height: 40px;
+        padding-top: 27px;
+    }
+    .block-1-item__title {
+        font-size: 44px;
+    }
+    .block-1-item__text {
+        font-size: 32px;
+    }
+    .button {
+        width: 360px;
+        height: 70px;
+        font-size: 32px;
+    }
+    .block-1-item {
+        top: 37%;
+    }
+    .block-1 {
+        background-size: 130%;
+        background-position: center 33%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .wrapper {
+        max-width: 1400px;
+    }
+    .social a img {
+        width: 50px;
+        height: 50px;
+    }
+    .logo img {
+        width: 350px;
+        height: 50px;
+        padding-top: 27px;
+    }
+    .block-1-item__title {
+        font-size: 48px;
+    }
+    .block-1-item__text {
+        font-size: 36px;
+    }
+    .button {
+        width: 380px;
+        height: 80px;
+        font-size: 36px;
+    }
+    .block-1-item {
+        top: 37%;
+    }
+    .block-1 {
+        background-size: 130%;
+        background-position: center 46%;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .wrapper {
+        max-width: 1500px;
+    }
+}
+
+

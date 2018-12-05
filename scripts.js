@@ -20,7 +20,6 @@ $("#gif").hover(function() {
 $('#fullpage').fullpage({
     // sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
     sectionSelector: '.vertical-scrolling',
-    // slideSelector: '.horizontal-scrolling',
     navigation: true,
     slidesNavigation: true,
     controlArrows: false,
@@ -57,9 +56,60 @@ $('#fullpage').fullpage({
     }
 });
 
+
+// $('#horizontal').fullpage({
+//     sectionSelector: '.vertical-scrolling1',
+//     slideSelector: '.horizontal-scrolling1',
+//     navigation: true,
+//     slidesNavigation: true,
+//     controlArrows: true
+// });
+
+
 function modalOpen(number) {
     $(".video-modal" + number).show();
 }
 function modalClose(number) {
     $(".video-modal" + number).hide();
 };
+
+var hideTrailer = function() {
+    var $body = $('body');
+    $body.find('.trailer').remove();
+    $body.css({
+        'overflow': 'auto'
+    });
+};
+
+$(function() {
+    var hideTrailer = function() {
+        var $body = $('body');
+        $body.find('.trailer').remove();
+        $body.css({
+            'overflow': 'auto'
+        });
+    };
+
+    var showTrailer = function(url) {
+        var $body = $('body'),
+            template =
+                '<div class="trailer">'+
+                '   <div class="trailer-popup">'+
+                '       <iframe frameborder="0" src="' + url + '?autoplay=1"></iframe>'+
+                '   </div>'+
+                '<div class="trailer-popup-close"></div>';
+
+        $body.css({
+            'overflow': 'hidden'
+        });
+        $body.prepend(template);
+        $body.find('.trailer-popup-close').click(hideTrailer);
+        $body.find('.trailer').click(hideTrailer);
+    };
+
+    $('body').on('click', 'a.play', function (e){
+        e.preventDefault();
+        showTrailer($(this).data('url'));
+    });
+});
+

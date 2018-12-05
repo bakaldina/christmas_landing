@@ -54,19 +54,20 @@
         </section>
         <section class="vertical-scrolling block block-2">
             <div class="block-2-back">
-                <img class="trace" src="img/trace.png" alt="Дорога">
+                <img class="trace" src="img/trace3.png" alt="Дорога">
             </div>
             <div class="block-item-wrapper">
-                <div onclick="modalOpen('1')" class="gif-back">
+                <div class="gif-back">
                     <img  id="gif" src="img/pin1_1.png" data-img="img/pin1.gif"/>
+                    <a href="#trailer" class="play" title="Смотреть трейлер" data-url="https://www.youtube.com/embed/jSRHa2Gvl4Q"><img src="img/play.svg"></a>
                 </div>
                 <div class="text">
                     <div class="block-title">Имя парня</div>
                     <div class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                 </div>
-                <div class="pin pin-1">
-                    <img src="img/mini_pin.png" alt="Пин">
-                </div>
+                <div class="pin pin-1" onclick="modalOpen('1')"></div>
+                <div class="pin pin-2"></div>
+                <div class="pin pin-3"></div>
             </div>
             <div class="scroll-icon">
                 <p>Следующая история</p>
@@ -90,12 +91,20 @@
         </section>
     </div>
 </main>
-<div class="video-modal1">
+<div class="video-modal1 video-modal">
     <div class="video-modal1_overlay" onclick="modalClose('1')"></div>
     <div class="video-modal1_content">
-        <iframe src="https://www.youtube.com/embed/jSRHa2Gvl4Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-        <div class="close" onclick="modalClose('1')">Закрыть</div>
+        <div id="horizontal">
+            <section class="vertical-scrolling1">
+                <div class="close" onclick="modalClose('1')"></div>
+                <div class="horizontal-scrolling1">
+                    ef
+                </div>
+                <div class="horizontal-scrolling1">
+                    vcv
+                </div>
+            </section>
+        </div>
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
