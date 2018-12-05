@@ -345,13 +345,26 @@ section {
     transform: translate(-50%, -50%);
     z-index: 9;
     position: relative;
-    background-size: contain;
     width: 800px;
     height: 440px;
     background-color: #fff;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
     border-radius: 30px;
+}
+.slick-carousel {
+    margin: 0 auto;
+    height: 100%;
+}
+.horizontal-scroll {
+    color: #000;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+}
+.horizontal-scroll1 {
+    background-color: #ff7200;
+}
+.horizontal-scroll2 {
+   background-color: #7000ff;
 }
 .video-modal1_overlay,
 .video-modal2_overlay,

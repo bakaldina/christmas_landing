@@ -3,8 +3,6 @@
 var $header_top = $('.header-top');
 
 
-
-
 // toggle menu
 $header_top.find('a').on('click', function() {
     $(this).parent().toggleClass('open-menu');
@@ -56,15 +54,9 @@ $('#fullpage').fullpage({
     }
 });
 
-
-// $('#horizontal').fullpage({
-//     sectionSelector: '.vertical-scrolling1',
-//     slideSelector: '.horizontal-scrolling1',
-//     navigation: true,
-//     slidesNavigation: true,
-//     controlArrows: true
-// });
-
+$('.slick-carousel').slick({
+    dots: true
+});
 
 function modalOpen(number) {
     $(".video-modal" + number).show();
