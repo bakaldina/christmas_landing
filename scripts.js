@@ -139,9 +139,14 @@ $(".block-1-item").on("click","a", function (event) {
 $('.slick-carousel').slick({
     dots: false,
     arrows: true,
-    infinite: true,
+    infinite: false,
     slide: '.horizontal-scroll',
     slidesToShow: 1,
     slidesToScroll: 1,
     touchMove: false,
 });
+// $('.slick-carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+//     console.log(nextSlide == 1);
+//
+//     nextSlide ?  $('[slick-prev]').show() : $('[slick-next]').hide()
+// });
