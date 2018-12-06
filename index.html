@@ -6,8 +6,10 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
+    <link rel="stylesheet" href="modal/modal.css" />
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -45,8 +47,7 @@
                     <div class="block-1-item__title">Таксипортируйтесь</div>
                     <div class="block-1-item__text">и отмечайте Новый год <br/>
                         раз за разом</div>
-                    <a href="#"> <button class="button">от <span>89</span> рублей</button></a>
-
+                    <a href="#slide5"> <button class="button">от <span>89</span> рублей</button></a>
                 </div>
                 <div class="scroll-icon">
                     <p>Таксипортироваться</p>
@@ -56,20 +57,20 @@
         </section>
         <section class="vertical-scrolling block block-2">
             <div class="block-2-back">
-                <img class="trace" src="img/trace3.png" alt="Дорога">
+                <img class="trace" src="img/trace2.png" alt="Дорога">
             </div>
             <div class="block-item-wrapper">
                 <div class="gif-back">
                     <img  id="gif" src="img/pin1_1.png" data-img="img/pin1.gif"/>
-                    <a href="#trailer" class="play" title="Смотреть трейлер" data-url="https://www.youtube.com/embed/jSRHa2Gvl4Q"><img src="img/play.svg"></a>
+                    <a href="#trailer" class="play" title="Смотреть трейлер" width="560" height="315" data-url="https://www.youtube.com/embed/3CdXctqPZy8"><img src="img/play.svg"></a>
                 </div>
                 <div class="text">
-                    <div class="block-title">Имя парня</div>
-                    <div class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    <div class="block-title">Владислав</div>
+                    <div class="block-text">Успел получить повышение до ведущего юриста. Соблюдает баланс между работой и личной жизнью, таксипортируясь с работы к семье.</div>
                 </div>
-                <div class="pin pin-1" onclick="modalOpen('1')"></div>
-                <div class="pin pin-2"></div>
-                <div class="pin pin-3"></div>
+                <p><a class="pin pin-1" href="#ex1" rel="modal:open"></a></p>
+                <p><a class="pin pin-2" href="#ex2" rel="modal:open"></a></p>
+                <p><a class="pin pin-3" href="#ex3" rel="modal:open"></a></p>
             </div>
             <div class="scroll-icon">
                 <p>Следующая история</p>
@@ -77,41 +78,315 @@
             </div>
         </section>
         <section class="vertical-scrolling block block-3">
+            <div class="block-2-back">
+                <img class="trace" src="img/trace3.png" alt="Дорога">
+            </div>
+            <div class="block-item-wrapper">
+                <div class="text">
+                    <div class="block-title">Таня и Илья</div>
+                    <div class="block-text">Влюбленные не захотели останавливаться на одном праздновании нового года и отметили праздник с семьей, на вечеринке и наедине.</div>
+                </div>
+                <div class="gif-back">
+                    <img  id="gif1" src="img/pin2_2.png" data-img="img/pin2.gif"/>
+                    <a href="#trailer" class="play" title="Смотреть трейлер" width="560" height="315" data-url="https://www.youtube.com/embed/3CdXctqPZy8"><img src="img/play.svg"></a>
+                </div>
+                <p><a class="pin pin-1" href="#ex4" rel="modal:open"></a></p>
+                <p><a class="pin pin-2" href="#ex5" rel="modal:open"></a></p>
+                <p><a class="pin pin-3" href="#ex6" rel="modal:open"></a></p>
+            </div>
             <div class="scroll-icon">
                 <p>Следующая история</p>
                 <a href="#fourthSection" class="icon-up-open-big"></a>
             </div>
         </section>
         <section class="vertical-scrolling block block-4">
+            <div class="block-2-back">
+                <img class="trace" src="img/trace4.png" alt="Дорога">
+            </div>
+            <div class="block-item-wrapper">
+                <div class="gif-back">
+                    <img  id="gif3" src="img/pin3_3.png" data-img="img/pin3.gif"/>
+                    <a href="#trailer" class="play" title="Смотреть трейлер" width="560" height="315" data-url="https://www.youtube.com/embed/3CdXctqPZy8"><img src="img/play.svg"></a>
+                </div>
+                <div class="text">
+                    <div class="block-title">Семья Васильевых</div>
+                    <div class="block-text">В семье прибавление, теперь таксипортация не обходится без Ситика. Зайцевы отмечают праздник на детском утреннике, в кругу родных и на даче</div>
+                </div>
+                <p><a class="pin pin-1" href="#ex7" rel="modal:open"></a></p>
+                <p><a class="pin pin-2" href="#ex8" rel="modal:open"></a></p>
+                <p><a class="pin pin-3" href="#ex9" rel="modal:open"></a></p>
+            </div>
             <div class="scroll-icon">
                 <p>Что их объединят</p>
                 <a href="#fifthSection" class="icon-up-open-big"></a>
             </div>
         </section>
-        <section class="vertical-scrolling block block-5">
-
+        <section class="slide vertical-scrolling block block-5" id="slide5" data-slide="5d">
+            <div class="footer block-5-item">
+                <div class="footer-title">Наши герои знают, чтобы встречать Новый год снова и снова, необходимо таксипортироваться раз за разом.</div>
+                <div class="footer-text-2">
+                    Встречайте несколько Новых годов по промокоду <span>HAPPYCITY</span> и получите скидку по 50 рублей на первые 10 поездок через приложение "Ситимобил"*
+                </div>
+                <div class="promo">
+                    <div class="promo-wrapper">
+                        <div class="bottom-title">Получить ссылку и скачать приложение:</div>
+                        <form class="phone-container" id="form">
+                            <label>
+                                <input type="text" class="js-phone-up phone" name="ph" placeholder="+7 " data-rule-required="true" data-rule-minlength="10"
+                                       data-msg="Неправильный формат номера.">
+                            </label>
+                            <input type="submit" class="phone-button" value="Получить ссылку">
+                        </form>
+                    </div>
+                </div>
+                <div class="bottom_app" id='app'>
+                    <a href="https://app.appsflyer.com/id579220388?pid=Citymobil&amp;c=landing_app" class="bottom_app_apple">
+                        <img src="img/app-store.svg" alt="Эпл">
+                    </a>
+                    <a href="https://app.appsflyer.com/com.citymobil?pid=Citymobil&amp;c=landing_app" class="bottom_app_google">
+                        <img src="img/google-play.svg" alt="Гугл">
+                    </a>
+                </div>
+                <div class="bottom_info">*Промокод действует только для новых клиентов через мобильное приложение «Ситимобил». Организатор: ООО "Сити-Мобил". 117997, г. Москва, ул. Архитектора Власова, д. 55. ОГРН 1097746203785. Срок проведения акции с 07.12.2018 г. по 31.12.2019 г. Подробности об организаторе акции, о правилах ее проведения можно узнать на сайте организатора по адресу:
+                    <a href="https://www.city-mobil.ru">www.city-mobil.ru</a>.
+                </div>
+            </div>
         </section>
     </div>
 </main>
-<div class="video-modal1 video-modal">
-    <div class="video-modal1_overlay" onclick="modalClose('1')"></div>
-    <div class="video-modal1_content">
-        <div class="close" onclick="modalClose('1')"></div>
-        <div class="slick-carousel">
-            <div class="horizontal-scroll horizontal-scroll1">
-                fer
+<div id="ex1" class="modal">
+    <div class="slick-carousel">
+        <div class="horizontal-scroll horizontal-scroll1">
+            <img src="img/ist_1.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Владислав в офисе</span> <br>
+                Новогодняя таксипортация начинается с корпоратива. Рабочий год был продуктивным, теперь можно и повеселиться.
             </div>
-            <div class="horizontal-scroll horizontal-scroll2">
-                reverv
+        </div>
+        <div class="horizontal-scroll horizontal-scroll2">
+            <img src="img/ist_2.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Владик у родителей</span> <br>
+                Мамина гордость, папино наследие. Филипп успел отметить праздник и с родителями.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll3">
+            <img src="img/ist_3.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Влад патихард</span> <br>
+                Душа Филиппа рвется к танцам и он отмечает новый год раз за разом.
             </div>
         </div>
     </div>
 </div>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<div id="ex2" class="modal">
+    <div class="slick-carousel">
+        <div class="horizontal-scroll horizontal-scroll2">
+            <img src="img/ist_2.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Владик у родителей</span> <br>
+                Мамина гордость, папино наследие. Филипп успел отметить праздник и с родителями.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll3">
+            <img src="img/ist_3.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Влад патихард</span> <br>
+                Душа Филиппа рвется к танцам и он отмечает новый год раз за разом.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll1">
+            <img src="img/ist_1.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Владислав в офисе</span> <br>
+                Новогодняя таксипортация начинается с корпоратива. Рабочий год был продуктивным, теперь можно и повеселиться.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ex3" class="modal">
+    <div class="slick-carousel">
+        <div class="horizontal-scroll horizontal-scroll3">
+            <img src="img/ist_3.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Влад патихард</span> <br>
+                Душа Филиппа рвется к танцам и он отмечает новый год раз за разом.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll1">
+            <img src="img/ist_1.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Владислав в офисе</span> <br>
+                Новогодняя таксипортация начинается с корпоратива. Рабочий год был продуктивным, теперь можно и повеселиться.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll2">
+            <img src="img/ist_2.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Владик у родителей</span> <br>
+                Мамина гордость, папино наследие. Филипп успел отметить праздник и с родителями.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ex4" class="modal">
+    <div class="slick-carousel">
+        <div class="horizontal-scroll horizontal-scroll1">
+            <img src="img/ist_1.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Таня и Илья знакомятся с родителями</span> <br>
+                Возможно скоро произойдет таксипортация в роддом и новых общих воспоминаний будет еще больше.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll2">
+            <img src="img/ist_2.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Таня и Илья на вечеринке</span> <br>
+                Свет становится ярче, а музыка громче. Пара таксипортировалась на вечеринку, которую они будут вспоминать еще долго.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll3">
+            <img src="img/ist_3.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Таня и Илья дома</span> <br>
+                Отмечать праздник вдвоем - настоящее удовольствие. Этот новый год они бы отмечали снова и снова.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ex5" class="modal">
+    <div class="slick-carousel">
+        <div class="horizontal-scroll horizontal-scroll2">
+            <img src="img/ist_2.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Таня и Илья на вечеринке</span> <br>
+                Свет становится ярче, а музыка громче. Пара таксипортировалась на вечеринку, которую они будут вспоминать еще долго.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll3">
+            <img src="img/ist_3.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Таня и Илья дома</span> <br>
+                Отмечать праздник вдвоем - настоящее удовольствие. Этот новый год они бы отмечали снова и снова.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll1">
+            <img src="img/ist_1.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Таня и Илья знакомятся с родителями</span> <br>
+                Возможно скоро произойдет таксипортация в роддом и новых общих воспоминаний будет еще больше.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ex6" class="modal">
+    <div class="slick-carousel">
+        <div class="horizontal-scroll horizontal-scroll1">
+            <img src="img/ist_1.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы за городом</span> <br>
+                Семейная таксипортация пролетела незаметно и теперь у семьи много энергии на отдых и развлечения.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll2">
+            <img src="img/ist_2.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы на утреннике</span> <br>
+                Детский смех и вера в чудо. Праздник с детьми заряжает улыбками и дарит новые воспоминания.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll3">
+            <img src="img/ist_3.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы с большой семьей</span> <br>
+                Настоящий семейный праздник Васильевы отмечают снова и снова.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ex7" class="modal">
+    <div class="slick-carousel">
+        <div class="horizontal-scroll horizontal-scroll2">
+            <img src="img/ist_2.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы на утреннике</span> <br>
+                Детский смех и вера в чудо. Праздник с детьми заряжает улыбками и дарит новые воспоминания.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll3">
+            <img src="img/ist_3.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы с большой семьей</span> <br>
+                Настоящий семейный праздник Васильевы отмечают снова и снова.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll1">
+            <img src="img/ist_1.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы за городом</span> <br>
+                Семейная таксипортация пролетела незаметно и теперь у семьи много энергии на отдых и развлечения.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ex8" class="modal">
+    <div class="slick-carousel">
+        <div class="horizontal-scroll horizontal-scroll3">
+            <img src="img/ist_3.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы с большой семьей</span> <br>
+                Настоящий семейный праздник Васильевы отмечают снова и снова.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll1">
+            <img src="img/ist_1.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы за городом</span> <br>
+                Семейная таксипортация пролетела незаметно и теперь у семьи много энергии на отдых и развлечения.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll2">
+            <img src="img/ist_2.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы на утреннике</span> <br>
+                Детский смех и вера в чудо. Праздник с детьми заряжает улыбками и дарит новые воспоминания.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ex9" class="modal">
+    <div class="slick-carousel">
+        <div class="horizontal-scroll horizontal-scroll1">
+            <img src="img/ist_1.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы за городом</span> <br>
+                Семейная таксипортация пролетела незаметно и теперь у семьи много энергии на отдых и развлечения.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll2">
+            <img src="img/ist_2.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы на утреннике</span> <br>
+                Детский смех и вера в чудо. Праздник с детьми заряжает улыбками и дарит новые воспоминания.
+            </div>
+        </div>
+        <div class="horizontal-scroll horizontal-scroll3">
+            <img src="img/ist_3.png" alt="1">
+            <div class="horizontal-scroll-text">
+                <span>Васильевы с большой семьей</span> <br>
+                Настоящий семейный праздник Васильевы отмечают снова и снова.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="modal/modal.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 <script src="scripts.js"></script>
 </body>
 </html>
