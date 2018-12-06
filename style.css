@@ -412,14 +412,14 @@ section {
     margin: auto;
     position: absolute;
     left: calc(50% - 450px);;
-    top: calc(50% - 300px);
+    top: calc(50% - 280px);
     text-align: center;
 }
 
 .footer-title {
     font-size: 26px;
     font-weight: 600;
-    margin-bottom: 60px;
+    margin-bottom: 4%;
 }
 
 .footer-text-2 {
@@ -443,7 +443,7 @@ section {
     background-image: url("img/group.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 30px;
+    margin-top: 4%;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -502,7 +502,7 @@ section {
 }
 .bottom_app {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
 .bottom_app a {
     text-decoration: none;
@@ -637,6 +637,74 @@ iframe {
     width: 1010px;
     height: 600px;
 }
+.modals {
+    display: none;
+    position: fixed;
+    width: 700px;
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: -33px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+.modals.show{
+    display: block;
+}
+.modals__content {
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    position: relative;
+}
+.modals__overlay {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.modal-text {
+    font-size: 22px;
+    color: #737373;
+    width: 420px;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 1.52;
+}
+.modals .close {
+    position: absolute;
+    right: 21px;
+    top: 21px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.modals .close:before, .modals .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 48px;
+    width: 2px;
+    background-color: #333;
+}
+.modals .close:before {
+    transform: rotate(45deg);
+}
+.modals .close:after {
+    transform: rotate(-45deg);
+}
 
 .trailer {
     position: fixed;
@@ -714,7 +782,63 @@ iframe {
 
 
 
+.block-6 {
+    background-image: url("img/block-6.jpg");
+    background-position: center 70%;
+    position: relative;
+}
 
+.block-6-item {
+    min-width: 800px;
+    height: 350px;
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 400px);
+    color: #fff;
+    text-align: center;
+}
+.block-6-item-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.pins-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.pins-ico {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 240px;
+    position: relative;
+}
+.pins-ico-1 {
+    background-image: url("img/mini_pin1.png");
+}
+.pins-ico-2 {
+    background-image: url("img/mini_pin2.png");
+}
+.pins-ico-3 {
+    background-image: url("img/mini_pin3.png");
+}
+
+.video {
+    width: 250px;
+    position: absolute;
+    bottom: -100px;
+    left: -29px;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.video a {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+
+}
 
 /*MQ STYLES*/
 /*–––––––––––––––––––––––––––––––––––––––––––––––––– */

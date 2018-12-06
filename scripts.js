@@ -21,7 +21,8 @@ $('#fullpage').fullpage({
     navigation: true,
     slidesNavigation: true,
     controlArrows: false,
-    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+    scrollBar: true,
+    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixSection'],
 
 });
 
@@ -71,17 +72,6 @@ $(function() {
         showTrailer($(this).data('url'));
     });
 });
-
-$('.slick-carousel').slick({
-    dots: false,
-    arrows: true,
-    infinite: true,
-    slide: '.horizontal-scroll',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    touchMove: false,
-});
-
 
 jQuery.validator.addMethod("checkMask", function(value, element) {
     return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
@@ -137,10 +127,21 @@ $("#form").submit(function(e){
     });
 });
 
-$(".block-1").on("click","a", function (event) {
+$(".block-1-item").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1500);
 });
 
+
+
+$('.slick-carousel').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    slide: '.horizontal-scroll',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    touchMove: false,
+});
