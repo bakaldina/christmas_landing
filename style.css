@@ -368,7 +368,7 @@ section {
     height: 520px;
     width: 600px;
     position: absolute;
-    top: calc(50% - 310px);
+    top: calc(50% - 286px);
     left: calc(50% - 670px);
     z-index: 20;
 }
@@ -912,6 +912,144 @@ iframe {
 @media screen and (min-width: 1700px) {
     .wrapper {
         max-width: 1500px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .footer .title {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .footer-text-1 {
+        margin-bottom: 4vh;
+    }
+    .footer-text-2 {
+        margin-bottom: 3vh;
+    }
+    .promo {
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+    }
+    .bottom-title {
+        margin-bottom: 4vh;
+    }
+    .bottom-text-title {
+        margin-bottom: 5vh;
+    }
+    .bottom_app {
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (max-height: 775px) {
+    .footer-title {
+        font-size: 24px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .footer-text-2 {
+        margin-bottom: 1vh;
+        font-size: 16px;
+    }
+    .promo {
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+    .bottom-title {
+        margin-bottom: 4vh;
+    }
+    .bottom-text-title {
+        margin-bottom: 5vh;
+    }
+    .bottom_app {
+        margin-top: 3vh;
+    }
+    .block-2 .gif-back {
+        height: 520px;
+        width: 551px;
+        position: absolute;
+        top: calc(50% - 276px);
+        left: calc(50% - 624px);
+        z-index: 33;
+    }
+    .block-2 #gif {
+        height: 483px;
+        width: 578px;
+        position: absolute;
+        top: calc(50% - 270px);
+        left: calc(50% - 297px);
+    }
+    .block-4 .gif-back {
+        background-image: url(img/pin3.png);
+        height: 520px;
+        width: 500px;
+        position: absolute;
+        top: calc(50% - 264px);
+        left: calc(50% - 615px);
+        z-index: 20;
+    }
+    .block-4 #gif3 {
+        height: 529px;
+        width: 545px;
+        position: absolute;
+        top: calc(50% - 262px);
+        left: calc(50% - 277px);
+    }
+}
+@media screen and (max-height: 712px) {
+    .footer-title {
+        font-size: 22px;
+    }
+    .footer-text-2 {
+        margin-bottom: 1vh;
+        font-size: 14px;
+    }
+    .promo {
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+    .bottom-title {
+        margin-bottom: 2vh;
+    }
+    .bottom-text-title {
+        margin-bottom: 3vh;
+    }
+    .bottom_app {
+        margin-top: 2vh;
+    }
+    .bottom_info {
+        font-size: 9px;
+    }
+    .block-2 .gif-back {
+        height: 520px;
+        width: 500px;
+        position: absolute;
+        top: calc(50% - 244px);
+        left: calc(50% - 582px);
+        z-index: 33;
+    }
+    .block-2 #gif {
+        height: 439px;
+        width: 500px;
+        position: absolute;
+        top: calc(50% - 270px);
+        left: calc(50% - 250px);
+    }
+    .block-4 .gif-back {
+        background-image: url(img/pin3.png);
+        height: 520px;
+        width: 500px;
+        position: absolute;
+        top: calc(50% - 264px);
+        left: calc(50% - 615px);
+        z-index: 20;
+    }
+    .block-4 #gif3 {
+        height: 529px;
+        width: 545px;
+        position: absolute;
+        top: calc(50% - 262px);
+        left: calc(50% - 277px);
     }
 }
 
