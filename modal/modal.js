@@ -51,7 +51,7 @@
             this.$elm.trigger(o.modal.BEFORE_OPEN, [this._ctx()]), this.options.showClose && (this.closeButton = o('<a href="#close-modal" rel="modal:close" class="close-modal ' + this.options.closeClass + '">' + this.options.closeText + "</a>"), this.$elm.append(this.closeButton)), this.$elm.addClass(this.options.modalClass).appendTo(this.$blocker), this.options.doFade ? this.$elm.css({
                 opacity: 0,
                 display: "inline-block"
-            }).animate({opacity: 1}, this.options.fadeDuration) : this.$elm.css("display", "inline-block"), this.$elm.css("opacity", "1"), this.$elm.trigger(o.modal.OPEN, [this._ctx()])
+            }).animate({opacity: 1}, this.options.fadeDuration) : this.$elm.css("display", "inline-block"), this.$elm.css("visibility", "visible"), this.$elm.trigger(o.modal.OPEN, [this._ctx()])
         }, hide: function () {
             this.$elm.trigger(o.modal.BEFORE_CLOSE, [this._ctx()]), this.closeButton && this.closeButton.remove();
             var t = this;

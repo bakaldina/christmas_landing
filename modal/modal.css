@@ -28,11 +28,11 @@
 }
 
 .modal {
-    /*display: none;*/
-    opacity: 0;
+    /*opacity: 0;*/
+    visibility: hidden;
     vertical-align: middle;
     position: relative;
-    z-index: 20;
+    z-index: 2;
     max-width: 800px;
     height: 440px;
     box-sizing: border-box;

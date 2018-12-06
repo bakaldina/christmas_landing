@@ -81,7 +81,6 @@ $('.slick-carousel').slick({
     slidesToScroll: 1,
     touchMove: false,
 });
-$('.slick-carousel').slick('setPosition');
 
 
 jQuery.validator.addMethod("checkMask", function(value, element) {
@@ -141,6 +140,7 @@ $("#form").submit(function(e){
 $(".block-1").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
-        left = $(id).offset().left;
-    $('body,html').animate({scrollBottom: bottom}, 1500);
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
 });
+

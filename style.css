@@ -44,7 +44,7 @@ ul, li {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .logo {
@@ -288,7 +288,7 @@ section {
     right: 11%;
 }
 
-    /*block-3*/
+/*block-3*/
 
 .block-3 {
     background-color: #7000ff;
@@ -568,6 +568,10 @@ section {
 .slick-slider {
     margin: 30px;
 }
+/*.slick-track {*/
+    /*width: 4620px!important;*/
+    /*transform: translate3d(-660px, 0px, 0px)!important;*/
+/*}*/
 .horizontal-scroll {
     color: #000;
     width: 550px;
