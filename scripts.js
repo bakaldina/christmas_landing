@@ -139,7 +139,7 @@ $(".block-1-item").on("click","a", function (event) {
 $('.slick-carousel').slick({
     dots: false,
     arrows: true,
-    infinite: false,
+    infinite: true,
     slide: '.horizontal-scroll',
     slidesToShow: 1,
     slidesToScroll: 1,

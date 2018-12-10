@@ -939,9 +939,38 @@ iframe {
     .bottom_app {
         margin-top: 3vh;
     }
+    
 }
 
 @media screen and (max-height: 775px) {
+    .block-5-item {
+        top:80px;
+    }
+    .header-top {
+        height: 60px;
+    }
+    .social a img {
+        padding-top: 10px;
+    }
+    .bottom_app {
+        margin-bottom: 3vh
+    }
+    .header-top {
+        height: 60px;
+    }
+    .logo img {
+        width: 200px;
+        height: 30px;
+        padding-top: 10px;
+    }
+    .block-1-item {
+        top: 30%
+    }
+    .logo img {
+        width: 200px;
+        height: 30px;
+        padding-top: 10px;
+    }
     .footer-title {
         font-size: 24px;
         margin-top: 1vh;
@@ -962,41 +991,60 @@ iframe {
         margin-bottom: 5vh;
     }
     .bottom_app {
-        margin-top: 3vh;
+        margin-top: -3vh;
     }
     .block-2 .gif-back {
         height: 520px;
-        width: 551px;
+        width: 500px;
         position: absolute;
-        top: calc(50% - 276px);
-        left: calc(50% - 624px);
+        top: calc(50% - 254px);
+        left: calc(50% - 552px);
         z-index: 33;
     }
     .block-2 #gif {
-        height: 483px;
-        width: 578px;
+        height: 446px;
+        width: 517px;
         position: absolute;
         top: calc(50% - 270px);
-        left: calc(50% - 297px);
+        left: calc(50% - 262px);
+    }
+    .block-3 #gif1 {
+        height: 535px;
+        width: 473px;
+        position: absolute;
+        top: calc(50% - 265px);
+        left: calc(50% - 255px);
+    }
+    .block-3 .gif-back {
+        background-image: url(img/pin2.png);
+        height: 520px;
+        width: 500px;
+        position: absolute;
+        top: calc(50% - 245px);
+        left: calc(50% + 70px);
+        z-index: 20;
+    }
+    .bottom_info {
+        font-size: 9px;
     }
     .block-4 .gif-back {
         background-image: url(img/pin3.png);
         height: 520px;
-        width: 500px;
+        width: 450px;
         position: absolute;
-        top: calc(50% - 264px);
-        left: calc(50% - 615px);
+        top: calc(50% - 227px);
+        left: calc(50% - 524px);
         z-index: 20;
     }
     .block-4 #gif3 {
-        height: 529px;
-        width: 545px;
+        height: 499px;
+        width: 454px;
         position: absolute;
-        top: calc(50% - 262px);
-        left: calc(50% - 277px);
+        top: calc(50% - 269px);
+        left: calc(50% - 226px);
     }
 }
-@media screen and (max-height: 712px) {
+/* @media screen and (max-height: 712px) {
     .footer-title {
         font-size: 22px;
     }
@@ -1052,5 +1100,13 @@ iframe {
         left: calc(50% - 277px);
     }
 }
+@media screen and (max-height: 600px) {
+    
+    .block-4 #gif3 {
+        height: 529px; 
+    }
+   
+
+} */
 
 
